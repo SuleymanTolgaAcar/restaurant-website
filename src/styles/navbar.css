@@ -1,0 +1,44 @@
+nav {
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom: 2px solid var(--accent-blue);
+  gap: 20px;
+  padding: 0 30px;
+  background-color: var(--bg-color);
+}
+
+.home-btn {
+  appearance: none;
+  background: transparent;
+  background-image: url("../assets/logo-small.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  aspect-ratio: 1/1;
+  border: none;
+  cursor: pointer;
+  width: var(--navbar-height);
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+    padding: 10px;
+  }
+  nav .btn1,
+  nav .btn2 {
+    font-size: 0.6rem;
+  }
+}
+
+nav .active::after {
+  width: 100%;
+}

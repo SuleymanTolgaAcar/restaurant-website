@@ -1,0 +1,128 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  gap: 50px;
+}
+
+.logo-large {
+  margin-top: 100px;
+  width: 50%;
+  background-image: url("../assets/logo-large.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  aspect-ratio: 1/0.4;
+}
+
+.mottos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-orange);
+}
+
+.mottos span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 250px;
+  text-align: center;
+}
+
+.arrow-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--accent-orange);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: arrow-circle 1.5s ease-in-out infinite;
+  overflow: hidden;
+  position: absolute;
+  top: 75vh;
+}
+
+.arrow-btn span {
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+
+@keyframes arrow-circle {
+  0% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  51% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.arrow-btn:hover span {
+  animation: arrow 0.5s ease-in-out 1;
+}
+
+.arrow-btn:hover {
+  opacity: 0.9;
+}
+
+.home-burger {
+  background-image: url(../assets/home-burger.jpg);
+}
+
+.home-restaurant {
+  background-image: url(../assets/home-restaurant.jfif);
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    height: 100%;
+  }
+  .logo-large {
+    width: 100%;
+    aspect-ratio: 1/0.2;
+  }
+  .mottos {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mottos span {
+    font-size: 1rem;
+    width: 100%;
+  }
+}

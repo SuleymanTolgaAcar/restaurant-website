@@ -1,0 +1,41 @@
+.menus-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  margin-top: 20vh;
+}
+
+.menu {
+  border: 3px solid var(--accent-blue);
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+.menus-btn-container .active {
+  background-color: var(--accent-blue);
+  color: var(--accent-orange);
+}
+
+.menus-title-image {
+  background-image: url(../assets/menus-brunch.jpg);
+}
+
+@media screen and (max-width: 768px) {
+  .menus-btn-container {
+    margin-top: 5vh;
+  }
+  .menus-btn-container button {
+    font-size: 0.8rem;
+  }
+  .menu {
+    padding: 20px;
+  }
+  .menu h2 {
+    font-size: 1.2rem;
+  }
+  .menu p {
+    font-size: 0.8rem;
+  }
+}

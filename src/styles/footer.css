@@ -1,0 +1,67 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.twitter-btn {
+  margin-right: auto;
+}
+
+.footer-btn {
+  font-size: 1rem;
+}
+
+.social-media-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  background-color: var(--accent-blue);
+}
+
+.social-media-btn path {
+  fill: var(--bg-color);
+}
+
+.social-media-btn:hover {
+  background-color: var(--accent-orange);
+}
+
+.social-media-btn:hover path {
+  fill: var(--accent-blue);
+}
+
+footer span {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    justify-content: center;
+  }
+  footer .footer-btn {
+    font-size: 0.6rem;
+  }
+  footer .social-media-btn {
+    display: none;
+  }
+
+  footer span {
+    display: none;
+  }
+}
