@@ -61,12 +61,11 @@ section {
   border: 3px solid var(--accent-blue);
   height: 100%;
   flex: 1;
-  padding: 100px 50px;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 50px;
-  overflow: clip;
 }
 
 .sec-p-container h1 {
@@ -187,24 +186,25 @@ section {
   color: var(--accent-orange);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and ((max-width: 768px) or (any-pointer: coarse)) {
   :root {
     --navbar-height: 60px;
   }
 
   section {
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     gap: 20px;
     padding: 20px;
   }
   .sec-image {
-    display: none;
+    order: 2;
   }
   .sec-p-container {
-    height: 50vh;
     padding: 30px 20px;
     gap: 20px;
+    flex: 0.7;
+    overflow: scroll;
   }
   .sec-p-container h1 {
     font-size: 1.5rem;
@@ -217,5 +217,24 @@ section {
   .sec-p-container .btn1,
   .sec-p-container .btn2 {
     font-size: 0.8rem;
+  }
+
+  .sections-container {
+    margin-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-height: 700px) {
+  .sections-container {
+    margin-top: 50vh;
+  }
+}
+
+@media screen and (orientation: landscape) and (any-pointer: coarse) {
+  .sections-container {
+    margin-top: 0vh;
+  }
+  section {
+    flex-direction: row;
   }
 }

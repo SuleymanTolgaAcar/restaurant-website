@@ -27,7 +27,7 @@ export default function Home({ scroll, setActivePage }) {
             <p>
               Our creative, food and beverage program combines satisfying
               staples with imaginative twists. From boozy drag show brunches,
-              classic Americana breakfasts, special occasions and everything in
+              classic American breakfasts, special occasions and everything in
               between, The Original has something for everyone.
             </p>
             <Link
@@ -46,8 +46,10 @@ export default function Home({ scroll, setActivePage }) {
           <div className="sec-p-container">
             <h1>OUR STORY</h1>
             <p>
-              From monthly Drag Brunch to Holiday Celebrations, find out what's
-              going on at The Original!
+              The Original is a family-owned and operated restaurant located in
+              the heart of the Castro District in San Francisco. We are a
+              neighborhood restaurant that has been serving the community for
+              over 40 years.
             </p>
             <Link
               className="btn2"
