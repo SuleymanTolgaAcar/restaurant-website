@@ -12,7 +12,7 @@ react-router, react-icons
 
 ## An image of the home page
 
-![Home Page](/home.png)
+![Home Page](/home-page.png)
 
 ## Features
 
